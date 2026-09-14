@@ -72,6 +72,10 @@ The UNSW-NB15 dataset contains multiple attack categories, including:
 
 The dataset is not included in this repository because of its large size. Users should obtain the dataset from the official UNSW-NB15 dataset source.
 
+Official Dataset Source:
+
+https://research.unsw.edu.au/projects/unsw-nb15-dataset
+
 ---
 
 ## Technologies Used
@@ -82,7 +86,8 @@ The dataset is not included in this repository because of its large size. Users 
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Jupyter Notebook / Google Colab
+- Jupyter Notebook
+- Google Colab
 
 ---
 
@@ -92,9 +97,11 @@ The dataset is not included in this repository because of its large size. Users 
 
 A **Random Forest Classifier** was selected as the primary Machine Learning model.
 
-Random Forest is suitable for network traffic classification because it can model complex relationships between multiple network-flow features and is effective for classification tasks involving a mixture of numerical and encoded categorical features.
+Random Forest is suitable for network traffic classification because it can model complex relationships between multiple network-flow features and is effective for classification tasks involving numerical and encoded categorical features.
 
 The model is trained using the provided training dataset and evaluated on the separate unseen testing dataset.
+
+The primary security objective is to achieve a high recall for malicious traffic because false negatives represent attacks that were not detected by the system.
 
 ---
 
